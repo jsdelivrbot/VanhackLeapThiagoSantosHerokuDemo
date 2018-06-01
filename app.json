@@ -1,0 +1,8 @@
+{
+  "name": "Thiago Santos | Traction On Demand",
+  "description": "A Heroku app that displays all Canadian Provinces.",
+  "repository": "https://github.com/thsantos/VanhackLeapThiagoSantosHerokuDemo",
+  "logo": "http://media.licdn.com/dms/image/C4E03AQGMg_S91CDfzA/profile-displayphoto-shrink_200_200/0?e=1533168000&v=beta&t=9XCfknYNYAMa16KFt-cz9mUp1R3B_tVZMRqrF615FdE",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}

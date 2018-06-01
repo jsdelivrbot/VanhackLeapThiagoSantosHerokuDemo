@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="//media.licdn.com/dms/image/C4E03AQGMg_S91CDfzA/profile-displayphoto-shrink_200_200/0?e=1533168000&v=beta&t=9XCfknYNYAMa16KFt-cz9mUp1R3B_tVZMRqrF615FdE">
+    </a>
+    <h1>Thiago Santos | Traction On Demand</h1>
+    <p>A Heroku app that displays all Canadian Provinces.</p>
+    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/thsantos/VanhackLeapThiagoSantosHerokuDemo"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Province</th>
+          <th scope="col">Capital</th>
+          <th scope="col">Population</th>
+        </tr>
+      </thead>
+      <tbody>
+          <% provinces.forEach(function(p) { %>
+          <tr>
+            <td><%= p.province %> </td>
+            <td><%= p.capital %></td>
+            <td><%= p.population %></td>
+          </tr>
+          <% }); %>
+      </tbody>
+    </table>
+  </div> <!-- row -->
+</div>
+
+
+</body>
+</html>
