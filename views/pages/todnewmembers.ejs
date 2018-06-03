@@ -14,7 +14,7 @@
       <img src="//media.licdn.com/dms/image/C4E03AQGMg_S91CDfzA/profile-displayphoto-shrink_200_200/0?e=1533168000&v=beta&t=9XCfknYNYAMa16KFt-cz9mUp1R3B_tVZMRqrF615FdE">
     </a>
     <h1>Thiago Santos | Traction On Demand</h1>
-    <p>All Canadian Provinces from a remote JSON.</p>
+    <p>All Accepted Offers from our Salesforce loaded from a simple Heroku Connect Mapping</p>
     <a type="button" class="btn btn-lg btn-primary" href="https://github.com/thsantos/VanhackLeapThiagoSantosHerokuDemo"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
   </div>
 </div>
@@ -23,19 +23,19 @@
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">Province</th>
-          <th scope="col">Capital</th>
-          <th scope="col">Population</th>
+          <th scope="col">Name</th>
+          <th scope="col">Occupation</th>
+          <th scope="col">Linkedin</th>
         </tr>
       </thead>
       <tbody>
-          <% provinces.forEach(function(p) { %>
-          <tr>
-            <td><%= p.province %> </td>
-            <td><%= p.capital %></td>
-            <td><%= p.population %></td>
-          </tr>
-          <% }); %>
+        <% members.forEach(function(m) { %>
+            <tr>
+              <td><%= m.name %> </td>
+              <td><%= m.position__c %></td>
+              <td><a href="<%= m.linkedin_profile_url__c %>" target="_blank"><%= m.linkedin_profile_url__c %></a></td>
+            </tr>
+            <% }); %>
       </tbody>
     </table>
   </div> <!-- row -->

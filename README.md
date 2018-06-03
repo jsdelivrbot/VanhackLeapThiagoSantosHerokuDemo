@@ -16,7 +16,6 @@ This document has been created in order to document all requirements and steps t
 This application has been built using Node.js and [Express 4](http://expressjs.com/), based on the Heroku getting started app [template](https://github.com/heroku/node-js-getting-started.git).
 
 ```sh
-
 $ git remote add origin https://github.com/thsantos/VanhackLeapThiagoSantosHerokuDemo.git
 $ git remote add heroku https://git.heroku.com/cryptic-headland-61225.git
 ```
@@ -44,6 +43,12 @@ $ heroku open
 or
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+## Adding Heroku Connect for Salesforce data integration
+```sh
+$ heroku addons:create herokuconnect -a <projectname>
+$ heroku addons:create heroku-postgresql:hobby-dev -a <projectname>
+```
 
 ## References
 
